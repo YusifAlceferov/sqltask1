@@ -31,3 +31,18 @@ SELECT adi, janri, nesr_ili
 FROM kitablar
 WHERE nesr_ili > 2015
 ORDER BY janri ASC;
+--4444444444444444444444444444444444444444444444444444444444444444444444444444444444
+    adi VARCHAR(100),
+    chixish_tarixi INT,
+    reytinq DECIMAL(3, 1)
+);
+
+SELECT adi, chixish_tarixi, reytinq
+FROM filmler
+WHERE chixish_tarixi < 2000
+ORDER BY chixish_tarixi ASC;
+
+SELECT adi, chixish_tarixi, reytinq
+FROM filmler
+WHERE reytinq > 7
+ORDER BY reytinq DESC;
