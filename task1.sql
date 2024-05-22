@@ -21,12 +21,13 @@ FROM ischiler
 WHERE departament = 'satış' AND maas > 600
 ORDER BY maas DESC;
 -- 333333333333333333333333333333333333333333333333333333333333333
-CREATE TABLE ischiler (
-    ad VARCHAR(100),
-    maas FLOAT,
-    departament VARCHAR(100)
+CREATE TABLE kitablar (
+    adi VARCHAR(100),
+    janri VARCHAR(100),
+    nesr_ili INT
 );
-SELECT ad, maas, departament
-FROM ischiler
-WHERE departament = 'satış' AND maas > 600
-ORDER BY maas DESC;
+
+SELECT adi, janri, nesr_ili
+FROM kitablar
+WHERE nesr_ili > 2015
+ORDER BY janri ASC;
